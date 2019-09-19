@@ -21,28 +21,28 @@ function draw() {
   ballX = ballX + ballSpeed;
   ballX2 = ballX2 + ballSpeed2;
 
-  a=a+0.1
-  b=b+0.2
+  a= a+0.5
+  
   
   if (ballX >= 400) {
-    scale(a); 
+   a=100
     ballSpeed = -3;
   }
 
   if (ballX2 >= 400) { 
-    scale(b); 
+      b=10
     ballSpeed2 = -5;
   }
 
   
   
   if (ballX <= 0) {
-    scale(a)
+    a=10
     ballSpeed = 3;
   }
 
   if (ballX2 <= 0) {
-    scale(b)
+   b=b-100
     ballSpeed2 = 5;
   }
 
